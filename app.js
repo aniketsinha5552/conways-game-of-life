@@ -96,6 +96,9 @@ function updateBoard(board) {
       }
     }
   }
+  let generation=document.getElementById('generation')
+  let gen= generation.innerText;
+  generation.innerText = Number(gen)+1
 }
 
 const sim = document.getElementById("simulate");
@@ -111,6 +114,8 @@ const reset = document.getElementById("reset");
 
 reset.addEventListener("click", () => {
   clearInterval(id);
+  let generation=document.getElementById('generation')
+  generation.innerText = 0
   for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
       const cell = document.getElementById(`${i}x${j}`);

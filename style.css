@@ -3,6 +3,16 @@
     grid-template-columns: repeat(50, 0fr);
     grid-template-rows: repeat(50, 0fr);
     gap: 0px;
+    place-items: center;
+    width: fit-content;
+    /* margin-left: 200px; */
+    background-color: red;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cell{
