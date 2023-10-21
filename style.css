@@ -1,0 +1,20 @@
+#canvas {
+    display: grid;
+    grid-template-columns: repeat(50, 0fr);
+    grid-template-rows: repeat(50, 0fr);
+    gap: 0px;
+}
+
+.cell{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    margin: 0px;
+    cursor: crosshair;
+    color: black;
+    font-size: 10px;
+}
+
+.selected{
+    background-color: black;
+}
