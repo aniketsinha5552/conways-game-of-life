@@ -8,15 +8,21 @@
   </head>
   <body>
     <div>
-      <p>This is <b>Conway's Way of Life</b></p>
+      <h3 class="title">Conway's Way of Life</h3>
     </div>
     <div id="container">
-        <div class="btns">
-            <button id="simulate">Simulate</button>
-            <button id="reset">Reset</button>
-            <button id="next">Next Generation</button>
-            <span>Generation <span id="generation">0</span></span>
-        </div>
+      <div class="btns">
+        <button id="simulate">Start</button>
+        <button id="stop">Stop</button>
+        <button id="reset">Reset</button>
+        <button id="next">Next</button>
+        <span id="generation-container">Generation <span id="generation">0</span></span>
+        <select id="speed">
+          <option value='1'>Slow</option>
+          <option value='2'>Medium</option>
+          <option value='3'>Fast</option>
+        </select>
+    </div>
       <div id="canvas"></div>
     </div>
     <div>

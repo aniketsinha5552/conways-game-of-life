@@ -101,17 +101,19 @@ function updateBoard(board) {
   generation.innerText = Number(gen)+1
 }
 
+// Start/Simulate
 const sim = document.getElementById("simulate");
-
 let id = null;
 sim.addEventListener("click", () => {
+  const speedElement= document.getElementById('speed')
+  const speed= Number(speedElement.value)
   id = setInterval(() => {
     calc();
-  }, 500);
+  }, 500/speed);
 });
 
+// Reset
 const reset = document.getElementById("reset");
-
 reset.addEventListener("click", () => {
   clearInterval(id);
   let generation=document.getElementById('generation')
@@ -123,3 +125,9 @@ reset.addEventListener("click", () => {
     }
   }
 });
+
+// Stop
+const stopBtn = document.getElementById("stop");
+stopBtn.addEventListener('click',()=>{
+     clearInterval(id)
+})
