@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link href="./style.css" rel="stylesheet" />
+    <link href="/style.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conways Way of Life</title>
@@ -16,6 +16,7 @@
         <button id="stop">Stop</button>
         <button id="reset">Reset</button>
         <button id="next">Next</button>
+        <button id="save">Save</button>
         <span id="generation-container">Generation <span id="generation">0</span></span>
         <select id="speed">
           <option value='1'>Slow</option>
@@ -25,9 +26,10 @@
     </div>
       <div id="canvas"></div>
     </div>
-    <div>
-      <img src="./examples.png" height="500" width="500" />
+    <div class="presets">
+      <h3 id="presets-title">Presets</h3>
+      <img src="/examples.png" height="500" width="500" />
     </div>
-    <script src="./app.js" />
+    <script src="/app.js" />
   </body>
 </html>
