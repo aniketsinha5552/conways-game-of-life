@@ -8,7 +8,10 @@ The initial pattern is the first generation. The second generation evolves from 
 - If the cell is dead, then it springs to life only in the case that it has 3 live neighbors
 
 ## Examples
-- https://github.com/aniketsinha5552/conways-way-of-life/assets/104712880/e1daf755-54e0-4415-b0d7-5adb91510ff1
-- https://github.com/aniketsinha5552/conways-game-of-life/assets/104712880/417b2a09-b388-47dd-820a-bff211cddc9f
+### 1
+https://github.com/aniketsinha5552/conways-way-of-life/assets/104712880/e1daf755-54e0-4415-b0d7-5adb91510ff1
+
+### 2
+https://github.com/aniketsinha5552/conways-game-of-life/assets/104712880/417b2a09-b388-47dd-820a-bff211cddc9f
 
 
