@@ -1,24 +1,24 @@
-// const canvas = document.getElementById("canvas");
+const canvas = document.getElementById("canvas");
 
-// const gridSize = 50;
+const gridSize = 50;
 
-// for (let i = 0; i < gridSize; i++) {
-//   for (let j = 0; j < gridSize; j++) {
-//     const button = document.createElement("button");
-//     button.className = "cell";
-//     // button.innerHTML= `${i}x${j}`
-//     button.id = `${i}x${j}`;
-//     canvas.appendChild(button);
-//     button.addEventListener("click", () => {
-//       // console.log(`button ${i},${j} clicked`)
-//       if (button.className == "cell") {
-//         button.className = "cell selected";
-//       } else {
-//         button.className = "cell";
-//       }
-//     });
-//   }
-// }
+for (let i = 0; i < gridSize; i++) {
+  for (let j = 0; j < gridSize; j++) {
+    const button = document.createElement("button");
+    button.className = "cell";
+    // button.innerHTML= `${i}x${j}`
+    button.id = `${i}x${j}`;
+    canvas.appendChild(button);
+    button.addEventListener("click", () => {
+      // console.log(`button ${i},${j} clicked`)
+      if (button.className == "cell") {
+        button.className = "cell selected";
+      } else {
+        button.className = "cell";
+      }
+    });
+  }
+}
 
 const next = document.getElementById("next");
 next.addEventListener("click", calc);
