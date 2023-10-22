@@ -1,5 +1,6 @@
 # conways-way-of-life
 
 
-## Examples
-https://github.com/aniketsinha5552/conways-way-of-life/assets/104712880/de304e5a-68cb-463a-b76d-f6f7465c22b6
+## Example
+https://github.com/aniketsinha5552/conways-way-of-life/assets/104712880/e1daf755-54e0-4415-b0d7-5adb91510ff1
+
