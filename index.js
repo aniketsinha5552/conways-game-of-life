@@ -133,3 +133,9 @@ stopBtn.addEventListener('click',()=>{
 })
 
 
+// Save
+const save = document.getElementById("save");
+save.addEventListener('click',()=>{
+     console.log('save')
+})
+
