@@ -1,4 +1,6 @@
+console.log("index.js");
 const canvas = document.getElementById("canvas");
+
 
 const gridSize = 50;
 
@@ -6,6 +8,7 @@ for (let i = 0; i < gridSize; i++) {
   for (let j = 0; j < gridSize; j++) {
     const button = document.createElement("button");
     button.className = "cell";
+    button.title= `${i}x${j}`
     // button.innerHTML= `${i}x${j}`
     button.id = `${i}x${j}`;
     canvas.appendChild(button);
