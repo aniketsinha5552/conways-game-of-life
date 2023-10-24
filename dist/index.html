@@ -7,29 +7,53 @@
     <title>Conways Game of Life</title>
   </head>
   <body>
-    <div>
-      <h3 class="title">Conway's Game of Life</h3>
+    <div id="header">
+      <h2 class="title">Conway's Game of Life</h2>
     </div>
-    <div id="container">
-      <div class="btns">
-        <button id="simulate">Start</button>
-        <button id="stop">Stop</button>
-        <button id="reset">Reset</button>
-        <button id="next">Next</button>
-        <button id="save">Save</button>
-        <span id="generation-container">Generation <span id="generation">0</span></span>
-        <select id="speed">
-          <option value='1'>Slow</option>
-          <option value='2'>Medium</option>
-          <option value='3'>Fast</option>
-        </select>
-    </div>
-      <div id="canvas">
+    <div class="main">
+      <div id="container">
+        <div id="canvas"></div>
+        <div class="btns">
+          <button id="simulate">Start</button>
+          <button id="stop">Stop</button>
+          <button id="reset">Reset</button>
+          <button id="clear">Clear</button>
+          <button id="next">Next</button>
+
+          <select id="speed" title="speed">
+            <option value="1">Slow</option>
+            <option value="2">Medium</option>
+            <option value="3">Fast</option>
+          </select>
+          <select id="size" title="grid size">
+            <option value="14">Small</option>
+            <option value="18">Medium</option>
+            <option value="22">Large</option>
+          </select>
+          <span id="generation-container"
+          >Generation <span id="generation">0</span></span
+        >
+        </div>
       </div>
-    </div>
-    <div class="presets">
-      <h3 id="presets-title">Presets</h3>
-      <img src="examples.png" height="500" width="500" />
+      <div id="about">
+        The Game of Life (an example of a cellular automaton) is played on an infinite two-dimensional rectangular grid of cells. 
+        Each cell can be either alive or dead. The status of each cell changes each turn of the game (also called a generation) depending on the statuses of that cell's 8 neighbors. 
+        Neighbors of a cell are cells that touch that cell, either horizontal, vertical, or diagonal from that cell.
+        The initial pattern is the first generation. The second generation evolves from applying the rules simultaneously to every cell on the game board, i.e. births and deaths happen simultaneously. Afterwards, the rules are iteratively applied to create future generations. For each generation of the game, a cell's status in the next generation is determined by a set of rules. These simple rules are as follows:
+  
+       - If the cell is alive, then it stays alive if it has either 2 or 3 live neighbors
+       - If the cell is dead, then it springs to life only in the case that it has 3 live neighbors.
+       <br>
+       This is an implementation of the game by <a href="https://aniketsinha.vercel.app/" target="_blank">me</a>.
+      </div>
+        <div class="presets">
+          <h3 id="presets-title">Presets</h3>
+        </div>
+        <footer>
+          <a href="https://github.com/aniketsinha5552/conways-game-of-life" target="_blank" title="github">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+          </a>
+        </footer>    
     </div>
     <script src="main.js" />
       <!-- Code injected by live-server -->

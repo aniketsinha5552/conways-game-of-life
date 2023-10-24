@@ -6,5 +6,15 @@ module.exports={
         static:path.join(__dirname,'dist'),
         compress: true,
         port: 3000
+    },
+
+    // to load css
+    module:{
+        rules:[
+            {
+               test: /\.css$/,
+               use:['style-loader','css-loader']
+            }
+        ]
     }
 }
