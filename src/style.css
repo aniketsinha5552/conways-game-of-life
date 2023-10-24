@@ -181,3 +181,12 @@ footer{
     display: flex;
     justify-content: center;
 }
+
+#music{
+    background-color: transparent;
+    border: none;
+    color: #1fc742;
+    margin-left: 20px;
+    padding-top: 8px;
+    cursor: pointer;
+}

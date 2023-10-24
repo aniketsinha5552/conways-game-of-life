@@ -1,4 +1,5 @@
 import './style.css'
+import music from './bg-music.mp3'
 
 const gridSize = 100;
 
@@ -204,6 +205,21 @@ stopBtn.addEventListener('click',()=>{
      const sim = document.getElementById("simulate");
      sim.removeAttribute("disabled");
      sim.style.backgroundColor= 'rgb(44, 129, 44)' 
+})
+
+// Music player
+let bg= new Audio(music)
+// bg.play()
+const player= document.getElementById('music');
+player.addEventListener('click',()=>{
+  if(bg.paused){
+    bg.play()
+    player.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5L6 9H2v6h4l5 4V5zm11 4l-6 6m0-6l6 6"/></svg>'
+  }
+  else{
+    bg.pause()
+    player.innerHTML= '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5L6 9H2v6h4l5 4V5zm4.54 3.46a5 5 0 0 1 0 7.07"/></svg>'
+  }
 })
 
 
