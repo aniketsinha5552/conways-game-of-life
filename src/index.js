@@ -6,7 +6,15 @@ const gridSize = 100;
 let prevBoard =[]
 
 function createBoard(){
-   const canvas = document.getElementById("canvas");
+  const canvas = document.getElementById("canvas");
+
+  let isMouseDown = false; // Variable to track mouse button state
+  canvas.addEventListener("mousedown", () => {
+    isMouseDown = true;
+  });
+  canvas.addEventListener("mouseup", () => {
+    isMouseDown = false;
+  });
    for (let i = 0; i < gridSize; i++) {
     for (let j = 0; j < gridSize; j++) {
       const button = document.createElement("button");
@@ -23,6 +31,16 @@ function createBoard(){
           button.className = "cell selected";
         } else {
           button.className = "cell";
+        }
+      });
+         // Add a mouseover event listener to select cells when the mouse is moved over them
+      button.addEventListener("mouseover", () => {
+        if (isMouseDown) {
+          if (button.className == "cell") {
+            button.className = "cell selected";
+          } else {
+            button.className = "cell";
+          }
         }
       });
     }
